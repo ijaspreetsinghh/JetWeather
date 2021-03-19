@@ -187,8 +187,6 @@ class _FullViewState extends State<FullView> {
                                   child: Container(
                                 margin: EdgeInsets.symmetric(
                                     horizontal: kHorizontalPadding),
-                                color: Colors.lightBlue,
-                                height: 10.0,
                               )),
                               Column(
                                 children: [
