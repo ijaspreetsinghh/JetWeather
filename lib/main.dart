@@ -5,7 +5,7 @@ import 'package:jetweather/Screens/FullView/fullview.dart';
 import 'package:jetweather/constants.dart';
 import 'package:jetweather/data.dart';
 import 'package:provider/provider.dart';
-
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -38,6 +38,10 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  Future<InitializationStatus> _initGoogleMobileAds() {
+    // TODO: Initialize Google Mobile Ads SDK
+    return MobileAds.instance.initialize();
+  }
   @override
   void initState() {
     Provider.of<Data>(context, listen: false).getLocation();

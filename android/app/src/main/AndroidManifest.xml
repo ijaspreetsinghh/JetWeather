@@ -2,7 +2,8 @@
     package="com.ij.jetweather">
 
 
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" 
+    />
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -18,6 +19,9 @@
         android:name="io.flutter.app.FlutterApplication"
         android:label="JetWeather"
         android:icon="@mipmap/ic_launcher">
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-4325421502488315/2961012516"/>
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
